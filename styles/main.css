@@ -12,7 +12,7 @@ body{
 /*   background:#CCD1D1;*/
    background:white;
    font-family:arial;
-} 
+}
 
 
 #avatar-container{
@@ -210,24 +210,30 @@ a{
 }
 
 
+
+
 /* table styles */
 table {
   margin-left: 40px;
-  margin-bottom:20px;  
+  margin-bottom:20px;
   font-family: "verdana", Geneva, Arial, Helvetica, sans-serif;
   font-size: 11pt;
   border-collapse: collapse;
   width: 90%;
 }
-
 td, th {
   border: none; /*1px solid #dddddd;*/
   text-align: left;
   padding: 1px;
 }
-
 th {
   border-bottom: 2px solid #3690c0;
 }
 
-
+/* scoped: only applies to CV tables with matching columns */
+table.cv-table {
+  table-layout: fixed;
+}
+table.cv-table col.col-year  { width: 15%; }
+table.cv-table col.col-role  { width: 35%; }
+table.cv-table col.col-place { width: 50%; }
